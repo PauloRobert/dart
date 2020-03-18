@@ -9,22 +9,22 @@ main() {
 //Criando funções
 calculoImc() {
   print("==== Digite seu peso ====");
-  var textPeso = stdin.readLineSync();
-  var peso = int.parse(textPeso);
+  String textPeso = stdin.readLineSync();
+  int peso = int.parse(textPeso);
 
   print("==== Digite sua altura ====");
-  var textAltura = stdin.readLineSync();
-  var altura = double.parse(textAltura);
+  String textAltura = stdin.readLineSync();
+  double altura = double.parse(textAltura);
 
-  var calcimc = peso / (altura * altura);
+  double calcimc = peso / (altura * altura);
 
-  imprimirresultados(calcimc);
+  imprimirResultados(calcimc);
 }
 
 //Criando a segunda função
 //Passando o calculo como parâmetro
 
-imprimirresultados(calcimc) {
+imprimirResultados(double calcimc) {
   print("====  ====");
   if (calcimc < 18.5) {
     print("Abaixo do peso");
