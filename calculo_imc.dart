@@ -12,14 +12,20 @@ calculoImc() {
   var textPeso = stdin.readLineSync();
   var peso = int.parse(textPeso);
 
-  print("==== Digite ua altura ====");
+  print("==== Digite sua altura ====");
   var textAltura = stdin.readLineSync();
   var altura = double.parse(textAltura);
 
   var calcimc = peso / (altura * altura);
 
-  print(calcimc);
+  imprimirresultados(calcimc);
+}
 
+//Criando a segunda função
+//Passando o calculo como parâmetro
+
+imprimirresultados(calcimc) {
+  print("====  ====");
   if (calcimc < 18.5) {
     print("Abaixo do peso");
   } else if (calcimc > 18.5 && calcimc < 24.9) {
