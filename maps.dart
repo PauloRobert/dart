@@ -1,6 +1,7 @@
 main(){
   //Criando uma maps para acessar dados
-  var maps = {
+  //Tipando o map
+  Map<String, dynamic> maps = {
     "nome" :  "Paulo Roberto",
     "idade" : 27,
     "cidade" : "Maringa",
